@@ -55,13 +55,13 @@ class HeaderCategory {
       CART_component.renderCart();
     });
 
-    let btnToCompare = document.createElement("button");
-    btnToCompare.textContent = "COMPARE";
-    btnToCompare.className = "category-btn btnToCompare";
-    btnToCompare.dataset.catName = "compare";
-    btnToCompare.addEventListener("click", () => {
-      COMPARE_component.renderCompareList();
-    });
+    // let btnToCompare = document.createElement("button");
+    // btnToCompare.textContent = "COMPARE";
+    // btnToCompare.className = "category-btn btnToCompare";
+    // btnToCompare.dataset.catName = "compare";
+    // btnToCompare.addEventListener("click", () => {
+    //   COMPARE_component.renderCompareList();
+    // });
 
     for (let i = 0; i < Categories.length; i++) {
       let category = Categories[i];
@@ -81,7 +81,7 @@ class HeaderCategory {
     }
 
     div.append(btnCart);
-    div.append(btnToCompare);
+    // div.append(btnToCompare);
     document.getElementById(this.ROOT_element).append(div);
     this.addActiveCategory();
     PRODUCTS_component.renderProducts(this.activeCategory);
